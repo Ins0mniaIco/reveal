@@ -4,7 +4,15 @@
 body {background:#0a0a0a;min-height:800px;}
 .box {width:90vw;margin-left:5vw;margin-top:20%;}
 .heading {width:50%;margin:0 auto;margin-bottom:40px;}
-.heading h2 {font-size:0.8em;color:#999999;font-weight:100;}
+.heading h2 {
+font-size: 0.8em;
+color: #999999;
+font-weight: 100;
+line-break: auto;
+letter-spacing: 1px;
+word-break: break-all;
+}
+
 .column {width:30%;margin-left:3.33%;float:left;display:inline-block;border-radius:10px;}
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   
@@ -25,6 +33,7 @@ body {background:#0a0a0a;min-height:800px;}
 }
 @media (min-width: 320px) and (max-width: 480px) {
     .box {width:100%;}
+    .heading {width:80%;}
       .column {width:90vw;margin-left:0vh;display:block;margin-top:1vh;}
       .column iframe {width:100% !important;}
 }
